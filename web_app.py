@@ -65,7 +65,7 @@ def main():
             "연구과제 참여확인서 txt 파일들을 선택하세요",
             type=['txt'],
             accept_multiple_files=True,
-            help="여러 파일을 동시에 선택할 수 있습니다"
+            help="여러 파일을 동시에 선택 및 업로드 할 수 있습니다"
         )
     
     with col2:
