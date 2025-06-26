@@ -282,8 +282,7 @@ def main():
     st.markdown("---")
     st.markdown(
         """
-        **오류/개선 문의:**  
-        개발자: 우철호
+        오류/개선 문의: 우철호 cheolho.woo31@gmail.com
         """
     ) 
     
