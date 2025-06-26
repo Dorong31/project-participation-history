@@ -277,6 +277,15 @@ def main():
         except Exception as e:
             st.error(f"❌ 처리 중 오류가 발생했습니다: {str(e)}")
             st.info("파일 형식이나 인코딩을 확인해주세요.")
-
+    
+    # 페이지 하단에 오류/개선 문의 연락처 추가
+    st.markdown("---")
+    st.markdown(
+        """
+        **오류/개선 문의:**  
+        개발자: 우철호
+        """
+    ) 
+    
 if __name__ == "__main__":
     main() 
