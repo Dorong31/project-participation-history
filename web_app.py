@@ -24,6 +24,20 @@ def main():
     st.title("📊 연구과제 참여이력 통합 시스템")
     st.markdown("---")
     
+    # 연구과제 참여확인서 txt 파일 다운로드 가이드 (expander)
+    with st.expander("연구과제 참여확인서 txt 파일 다운로드 가이드 보기", expanded=False):
+        st.markdown("""
+        1. **고려대 연구포털(KURMS) 로그인**  
+           [https://rms.korea.ac.kr/nrpt/openHome/index.do](https://rms.korea.ac.kr/nrpt/openHome/index.do)
+        2. **연구과제 > 연구과제 참여확인서** 메뉴 클릭
+        3. **참여과제 전체 선택 후 '일괄출력' 클릭**  
+           (오른쪽 창에 모든 과제가 한 파일로 생성되었는지 확인)
+        4. **'저장' 버튼 > 파일형식 '.txt' 선택 후 확인**
+        """)
+        st.image("A_image/kurms_step1.png", caption="KURMS 로그인 화면")
+        st.image("A_image/kurms_step2.png", caption="연구과제 참여확인서 메뉴 선택")
+        st.image("A_image/kurms_step3.png", caption="참여과제 전체 선택 > 일괄출력 > 저장 버튼 및 파일형식 선택")
+    
     # 사이드바 - 사용법 안내
     with st.sidebar:
         st.header("📖 사용법")
@@ -263,6 +277,15 @@ def main():
         except Exception as e:
             st.error(f"❌ 처리 중 오류가 발생했습니다: {str(e)}")
             st.info("파일 형식이나 인코딩을 확인해주세요.")
+    
+    # 페이지 하단에 오류/개선 문의 연락처 추가
+    st.markdown("---")
+    st.markdown(
+        """
+        최근 업데이트: 2025-06-27
+        오류/개선 문의: 철호 cheolho.woo31@gmail.com
+        """
+    ) 
 
 if __name__ == "__main__":
-    main() 
+    main()
