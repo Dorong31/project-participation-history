@@ -10,7 +10,7 @@
 ## 사용법
 
 1. 고려대 연구포털에서 연구과제 참여확인서를 텍스트 파일로 저장
-2. 아래 URL 접속 및 텍스트 파일 업로드
+2. URL 접속 및 텍스트 파일 업로드
    https://project-participation-history-for-korea-univ-researchers.streamlit.app/
 3. 과제정보 및 연구원정보(원본 및 참여과제별 기간 통합본) 확인
 4. 엑셀 파일로 다운로드
