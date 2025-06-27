@@ -43,4 +43,4 @@ python project_participation_excel.py
 
 ## 라이선스
 
-이 프로젝트는 개인/학술 목적으로 사용됩니다. 
+이 프로젝트는 개인/학술 목적으로 사용됩니다.
